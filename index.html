@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <a href="https://iiitr.ac.in/" target="_blank">
+            <img src="https://iiitr.ac.in/assets/images/logo.png" alt="IIITR Logo" class="logo">
+        </a>
+        
+        <header>INDIAN INSTITUTE OF INFORMATION AND TECHNOLOGY &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RAICHUR</header>
+        <?php
+        echo "CORRECT"; ?>
+        <form action="add_data.php" method="post" enctype="multipart/form-data">
+            <div class="form first" >
+                <div class="details personal">
+                    <span class="title">Application Details</span>
+        
+                    <div class="fields">
+                        <div class="input-fieldsfor3">
+                            <label for="primary_discipline">i. Primary Discipline *</label>
+                            <input type="text" id="primary_discipline" name="primary_discipline" placeholder="Enter" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="secondary_discipline">ii. Secondary Discipline</label>
+                            <input type="text" id="secondary_discipline" name="secondary_discipline" placeholder="Enter">
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="application_for_post">iii. Application for post</label>
+                            <input type="text" id="application_for_post" name="application_for_post" placeholder="Enter">
+                        </div>
+        
+                        <div class="input-fieldsfor2">
+                            <label for="primary_specialization">iv. Primary Specialization *</label>
+                            <input type="text" id="primary_specialization" name="primary_specialization" placeholder="Enter" required>
+                        </div>
+        
+                        <div class="input-fieldsfor2">
+                            <label for="secondary_specialization">v. Secondary Specialization</label>
+                            <input type="text" id="secondary_specialization" name="secondary_specialization" placeholder="Enter">
+                        </div>
+        
+                        <div class="input-fieldsfor1">
+                            <label for="research_area">Research Area</label>
+                            <input type="text" id="research_area" name="research_area" placeholder="Enter">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+        
+                    <div class="fields">
+                        <div class="input-fieldsfor3">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="Enter First name" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="middle_name">Middle Name</label>
+                            <input type="text" id="middle_name" name="middle_name" placeholder="Enter Middle name">
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" placeholder="Enter Last name" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="date_of_birth">Date of Birth</label>
+                            <input type="date" id="date_of_birth" name="date_of_birth" placeholder="Enter Date of Birth" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" name="age" placeholder="Your age will be calculated" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="place_of_birth">Place of Birth</label>
+                            <input type="text" id="place_of_birth" name="place_of_birth" placeholder="Enter Place of Birth" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="marital_status">Marital Status</label>
+                            <input type="text" id="marital_status" name="marital_status" placeholder="Enter Marital Status" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="gender">Gender</label>
+                            <input type="text" id="gender" name="gender" placeholder="Enter Gender" required>
+                        </div>
+        
+                        <div class="input-fieldsfor3">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Enter Nationality" required>
+                        </div>
+        
+                        <div class="input-fieldsfor2">
+                            <label for="father_name">Father's Name</label>
+                            <input type="text" id="father_name" name="father_name" placeholder="Enter Father's Name" required>
+                        </div>
+        
+                        <div class="input-fieldsfor2">
+                            <label for="mother_name">Mother's Name</label>
+                            <input type="text" id="mother_name" name="mother_name" placeholder="Enter Mother's Name" required>
+                        </div>
+
+                        <div class="input-fieldsfor2">
+                            <label for="email">Email ID</label>
+                            <input type="text" id="user_id" name="user_id" placeholder="Enter Email ID" required>
+                        </div>
+
+                        <div class="input-fieldsfor2">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter password" required>
+                        </div>
+
+                        <div class="input-fieldsfor2">
+                            <label for="caste_certificate">caste certificate</label>
+                            <input name="pdf"  id="pdf" type="file" accept=".pdf" />
+                        </div>
+        
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+
+                        <button type="submit" class="SaveBtn">
+                            <span class="btnText" name="save">Save</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+    
+</body>
+</html>

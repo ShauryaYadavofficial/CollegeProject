@@ -1,0 +1,244 @@
+.logo {
+    position: fixed;
+    top: 0.5;
+    left: 1 ;
+    width: 150px;
+    height: auto;
+    z-index: 1; 
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.container{
+    position: relative;
+    max-width: 9000px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin:0 15px;
+    background-color : rgb(87, 212, 234);
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.17);
+}
+
+
+.container header{
+    margin-left: 797px;
+    font-size:20px;
+    font-weight:600;
+    color:black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container header::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom:2px;
+    height:3px;
+    width:27px;
+    border-radius: 8px;
+    background-color:rgb(255, 255, 255);
+}
+
+.container form{
+    position:relative;
+    margin-top:85px;
+    margin-left: 175px;
+    min-height: 950px;
+    background-color: #ffffff;
+}
+
+.container form .details{
+    margin-top: 30px;
+}
+
+.container form .title{
+    display:block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 6px ;
+    color: #2d1eff;
+
+}
+
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-fieldsfor3{
+    display: flex;
+    width:calc(100%/ 3 - 15px);
+    flex-direction: column;
+    margin:4px 0;
+}
+
+.input-fieldsfor3 label{
+    font-size: 17px;
+    margin: 6px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#2e2e2e;
+}
+
+.input-fieldsfor3 input{
+    outline: none;
+    font-size: 14px;
+    font-weight:400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+    border:1px solid #aaa;
+    padding: 0 15px;
+    height:40px;
+    width:300px;
+    border-radius: 10px; 
+    margin: 8px 0;
+}
+
+.input-fieldsfor3 input::is(:focus,:valid){
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.13);
+}
+
+.input-fieldsfor3 input[type="date"]{
+    color: #707070;
+
+}
+
+.input-fieldsfor3 input[type="date"]:valid{
+    color: #333;
+
+}
+
+
+form .fields .input-fieldsfor2{
+    display: flex;
+    width:calc(100%/ 2 - 15px);
+    flex-direction: column;
+    margin:4px 0;
+}
+
+.input-fieldsfor2 label{
+    font-size: 17px;
+    margin: 6px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#2e2e2e;
+}
+
+.input-fieldsfor2 input{
+    outline: none;
+    font-size: 14px;
+    font-weight:400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+    border:1px solid #aaa;
+    padding: 0 15px;
+    height:40px;
+    width:300px;
+    border-radius: 10px; 
+    margin: 8px 0;
+}
+
+.input-fieldsfor2 input::is(:focus,:valid){
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.13);
+}
+
+.input-fieldsfor2 input[type="date"]{
+    color: #707070;
+
+}
+
+.input-fieldsfor2 input[type="date"]:valid{
+    color: #333;
+
+}
+form .fields .input-fieldsfor1{
+    display: flex;
+    width:calc(100%/ 1 - 15px);
+    flex-direction: column;
+    margin:4px 0;
+}
+
+.input-fieldsfor1 label{
+    font-size: 17px;
+    margin: 6px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#2e2e2e;
+}
+
+.input-fieldsfor1 input{
+    outline: none;
+    font-size: 14px;
+    font-weight:400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#333;
+    border:1px solid #aaa;
+    padding: 0 15px;
+    height:60px;
+    width:500px;
+    border-radius: 10px; 
+    margin: 8px 0;
+}
+
+.input-fieldsfor1 input::is(:focus,:valid){
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.13);
+}
+
+.input-fieldsfor1 input[type="date"]{
+    color: #707070;
+
+}
+
+.input-fieldsfor1 input[type="date"]:valid{
+    color: #333;
+
+}
+
+.container form button, .SaveBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.container form .SaveText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i,
+form .backBtn i{
+    margin: 0 6px;
+}
+form .SaveBtn i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .SaveBtn{
+    margin-right: 14px;
+}
